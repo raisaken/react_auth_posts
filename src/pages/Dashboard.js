@@ -42,7 +42,7 @@ const Dashboard = () => {
   }
 
   const handleDelete = (id) => {
-    if (window.confirm("Are you sure you want to delete this tour ?")) {
+    if (window.confirm("Are you sure you want to delete this post ?")) {
       dispatch(deleteTour({ id, toast }));
     }
   };
@@ -57,7 +57,7 @@ const Dashboard = () => {
       }}
     >
       {userTours.length === 0 && (
-        <h3>No tour available with the user: {user?.result?.name}</h3>
+        <h3>No posts available with the user: {user?.result?.name}</h3>
       )}
 
       {userTours.length > 0 && (
