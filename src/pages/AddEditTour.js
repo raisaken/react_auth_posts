@@ -13,6 +13,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { createTour, updateTour } from "../redux/features/tourSlice";
 
+//inital state
 const initialState = {
   title: "",
   description: "",
